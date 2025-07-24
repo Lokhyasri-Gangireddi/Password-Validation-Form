@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loki's Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <form action="#">
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+        </p>
+
+        <div class="instructions">
+            Password must contain
+            <ul>
+                <li class="invalid" id="length">At least 8 characters</li>
+                <li class="invalid" id="upcase">At least one uppercase letter</li>
+                <li class="invalid" id="lowcase">At least one lower case letter</li>
+                <li class="invalid" id="special">At least one special character</li>
+            </ul>
+        </div>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
